@@ -6,7 +6,7 @@
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Trang chủ</h1>
     </div>
-    <a href="{{route('admin.order')}}"><h3>Sản phẩm sắp hết hàng</h3></a>
+    <a href="{{route('admin.warehouse')}}"><h3>Sản phẩm sắp hết hàng</h3></a>
     <div class="table-responsive mt-3">
         <table class="table table-sm">
             <thead>

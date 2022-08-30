@@ -45,56 +45,65 @@
                         <ul class="nav flex-column">
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.home') ? 'active' : ''}}" aria-current="page" href="{{ route('admin.home') }}">
-                                    <span data-feather="home" class="align-text-bottom"></span>
-                                    Trang chủ
+                                    <span data-feather="home" class="align-text-bottom">
+                                        <i class="bi bi-house-fill"> Trang chủ</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.category') || Route::is('admin.*.category') ? 'active' : ''}}" href="{{ route('admin.category') }}">
-                                    <span data-feather="list" class="align-text-bottom"></span>
-                                    Danh mục
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-list"> Danh mục</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.product') || Route::is('admin.*.product') ? 'active' : ''}}" href="{{ route('admin.product') }}">
-                                    <span data-feather="shopping-bag" class="align-text-bottom"></span>
-                                    Sản phẩm
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-archive-fill"> Sản phẩm</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.event') || Route::is('admin.*.event') ? 'active' : ''}}" href="{{ route('admin.event') }}">
-                                    <span data-feather="image" class="align-text-bottom"></span>
-                                    Sự kiện
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-badge-ad-fill"> Sự kiện</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.order') || Route::is('admin.*.order') ? 'active' : ''}}" href="{{ route('admin.order') }}">
-                                    <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                                    Đơn hàng
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-cart-fill"> Đơn hàng</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.warehouse') || Route::is('admin.*.warehouse') ? 'active' : ''}}" href="{{ route('admin.warehouse') }}">
-                                    <span data-feather="archive" class="align-text-bottom"></span>
-                                    Kho
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-box-seam-fill"> Kho</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.contact') || Route::is('admin.*.contact') ? 'active' : ''}}" href="{{ route('admin.contact') }}">
-                                    <span data-feather="phone" class="align-text-bottom"></span>
-                                    Chăm sóc khách hàng
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-telephone-fill"> Chăm sóc khách hàng</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.policy') || Route::is('admin.*.policy') ? 'active' : ''}}" href="{{ route('admin.policy') }}">
-                                    <span data-feather="clipboard" class="align-text-bottom"></span>
-                                    Chính sách
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-clipboard-fill"> Chính sách</i>
+                                    </span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link {{\Route::is('admin.profile') || Route::is('admin.*.profile') ? 'active' : ''}}" href="{{ route('admin.profile') }}">
-                                    <span data-feather="user" class="align-text-bottom"></span>
-                                    Thông tin cá nhân
+                                    <span class="align-text-bottom">
+                                        <i class="bi bi-person-fill"> Thông tin cá nhân</i>
+                                    </span>
                                 </a>
                             </li>
                         </ul>

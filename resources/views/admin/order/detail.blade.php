@@ -18,7 +18,7 @@
                 <h3>Chi tiết đơn hàng #{{$order->id}}</h3>
                 <p class="d-flex justify-content-end">Ngày đặt: {{date('H:i:s d-m-Y', strtotime($order->created_at));}}</p>
                 <div class="row">
-                    <div class="col-md-6 col-12 d-flex">
+                    <div class="col-md-6 col-12 d-flex mb-3">
                         <div class="card flex-fill p-3">
                             <h5 class="border-bottom pb-2 ">Địa chỉ người nhận</h5>
                             <p class="fw-bold m-0">{{$order->name}}</p>

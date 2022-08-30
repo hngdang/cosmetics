@@ -10,12 +10,12 @@ $cartCount = Product::cartCount();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
-    <link rel="shortcut icon" href="public/images/cosmetics.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('public/images/cosmetics.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="public/client/css/style.css">
+    <link rel="stylesheet" href="{{ asset('public/client/css/style.css') }}">
 </head>
 <body class="d-flex flex-column min-vh-100">
     <div class="container-fluid">
@@ -162,6 +162,6 @@ $cartCount = Product::cartCount();
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="public/client/js/main.js"></script>
+    <script src="{{asset('public/client/js/main.js')}}"></script>
 </body>
 </html>

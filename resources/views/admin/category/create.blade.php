@@ -13,7 +13,7 @@
         </nav>
     </div>
 
-    <div class="col-6 m-auto mt-5">
+    <div class="col-12 col-md-6 m-auto mt-5">
         @include('components.alert')
         <form method="POST">
             @csrf

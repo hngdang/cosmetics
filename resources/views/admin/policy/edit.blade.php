@@ -13,7 +13,7 @@
         </nav>
     </div>
 
-    <div class="col-10 m-auto">
+    <div class="col-12 col-md-10 m-auto">
         @include('components.alert')
         <form method="POST">
             @method("PUT")

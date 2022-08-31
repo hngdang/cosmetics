@@ -1,64 +1,57 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Hệ thống mua bán mỹ phẩm
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Link truy cập
 
-## About Laravel
+Link web: https://cosmetics-laravel.herokuapp.com/
+<br>
+Email: tranhoangdang1402@gmail.com
+<br>
+Mật khẩu: 12345678
+<br>
+<br>
+Link web CMS: https://cosmetics-laravel.herokuapp.com//admin
+<br>
+Email: tranhoangdang1402@gmail.com
+<br>
+Mật khẩu: 12345678
+<br>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Mô tả hệ thống
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Hệ thống mua bán mỹ phẩm bao gồm 2 người dùng chính là quản trị viên và khách hàng.<br>
+Khi đăng nhập vào trang quản trị viên thành công, quản trị viên sẽ có những chức năng chính bao gồm:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   Đăng nhập: Quản trị viên bắt buộc phải đăng nhập trước khi vào được hệ thống, nếu đã đăng nhập chuyển đến trang chủ
+-   Tìm kiếm: tìm theo tên danh mục, tên chủ đề, tiêu đề bài báo, tên nhân viên, tên khách hàng
+-   Quản lý danh mục: thêm, xóa, sửa danh mục, xuất file csv tất cả danh mục có trong hệ thống
+-   Quản lý sản phẩm: thêm, xóa, sửa sản phẩm, xuất file csv tất cả sản phẩm có trong hệ thống
+-   Quản lý sự kiện: thêm , xóa, sửa nhân viên
+-   Quản lý đơn hàng: xem danh sách và chi tiết từng đơn hàng
+-   Quản lý kho: những sản phẩm có số lượng nhỏ hơn 10 là sản phẩm sắp hết hàng, những sản phẩm hơn 30 ngày chưa được cập nhật là sản phẩm tồn kho
+-   Chăm sóc khách hàng: xem danh sách những yêu cầu mà người dùng gửi đến
+-   Quản lý chính sách: cập nhật nội dung các chính sách
+-   Quản lý thông tin cá nhân: cập nhật thông tin cá nhân
+-   Đổi mật khẩu
 
-## Learning Laravel
+Khi đăng nhập vào trang mua hàng, khách hàng sẽ có những chức năng chính bao gồm:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   Tìm kiểm: tìm kiếm theo tên sản phẩm
+-   Lọc sản phẩm: theo sản phẩm mới nhất, theo giá, theo sản phẩm được xem nhiều nhất, theo số lượng bán ra
+-   Xem sản phẩm theo danh mục
+-   Xem chi tiết sản phẩm
+-   Xem danh sách và chi tiết các sự kiện
+-   Gửi các yêu cầu hỗ trợ
+-   Thêm sản phẩm vào giỏ hàng: Khách hàng bắt buộc phải đăng nhập để thêm sản phẩm. Nếu số lượng sản phẩm trong giỏ lớn hơn số lượng sản phẩm trong kho, hiển thị thông báo cho người dùng.
+-   Thêm danh sách sản phẩm trong giỏ hàng: Khách hàng bắt buộc phải đăng nhập để xem danh sách sản phẩm trong giỏ hàng.
+-   Thanh toán: Khách hàng bắt buộc phải đăng nhập để thanh toán. Sau khi thanh toán sẽ gửi mail xác nhận đơn hàng đến email mà khách hàng đã đăng ký. Kiểm tra số lượng sản phẩm trong kho, nếu sản phẩm trong kho có số lượng nhỏ hơn số lượng trong giỏ của bất kỳ khách hàng nào khác đều sẽ cập nhật số lượng sản phẩm trong giỏ hàng bằng với số lượng sản phẩm trong kho
+-   Đăng nhập
+-   Đăng ký: khi đăng ký, hệ thống sẽ kiểm tra email tồn tài hay chưa. Nếu đã tồn tài, gửi thông báo email đã tồn tài. Nếu chưa, đăng ký email và gửi link xác nhận tài khoản qua mail với email mà khách hàng vừa đăng ký. Khi người dùng truy cập vào đúng link có mã token sẽ được xác nhận tài khoản và chuyển đến trang đăng nhập. Nếu email chưa được xác nhận, sẽ không thể đăng nhập thành công.
+-   Quên mật khẩu: Khách hàng sẽ nhập email đã đăng ký, hệ thống kiểm tra email này. Nếu tồn tài email, gửi đến email khách hàng một mã token, người dùng truy cập link này để truy cập đến trang đổi mật khẩu. Nếu link truy cập không đúng sẽ trả về trang quên mật khẩu.
+-   Đổi mật khẩu
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Hướng dẫn chạy source code
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Tải source code vào htdocs trong XAMPP<br>
+Nhập file database/cosmetics.sql vào phpMyadmin<br>
+Cấu hình lại thông tin của db trong file env<br>
+Mở trình duyệt và chạy localhost/cosmetics

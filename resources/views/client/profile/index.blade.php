@@ -13,7 +13,7 @@
                 <form method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
-                        <div class="col-12 col-md-4 my-auto mx-3">
+                        <div class="col-12 col-md-4 my-auto">
                             <label for="image"><img src="{{asset(isset($user->image) ? 'public/uploads/'.$user->image : 'public/images/default-img.png')}}" class="img-fluid w-75 rounded-circle" id="frame" alt=""></label>
                             <input type="file" name="image" id="image" accept="image/*" onchange="preview(event)"/>
                         </div>

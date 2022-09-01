@@ -5,3 +5,7 @@ var preview = function(event){
         URL.revokeObjectURL(frame.src);
     }
 };
+
+$(document).on('click', '.delete', function(){
+    alert('Delete');
+});

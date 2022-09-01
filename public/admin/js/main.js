@@ -10,3 +10,7 @@ function myFunction() {
   var x = document.getElementById("category").value;
   document.getElementById("skin").style.display = x == 1 ? "block" : 'none';
 }
+
+$(document).on('click', '.delete', function(){
+  alert('Delete');
+});

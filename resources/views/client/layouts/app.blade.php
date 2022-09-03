@@ -125,10 +125,10 @@ $cartCount = Product::cartCount();
                         <h2 class="ms-2 display-6 fw-bold text-primary">Cosmetics</h2>
                     </div>
                     <ul class="list-unstyled d-flex mt-3">
-                        <li class="me-3"><a class="border rounded-circle p-2" href="https://twitter.com/trn_hngdang"><i class="bi bi-twitter" width="24" height="24"></i></a></li>
-                        <li class="me-3"><a class="border rounded-circle p-2" href="https://www.facebook.com/hngdang.trn/"><i class="bi bi-facebook" width="24" height="24"></i></a></li>
-                        <li class="me-3"><a class="border rounded-circle p-2" href="https://www.instagram.com/hngdang.trn/"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
-                        <li class="me-3"><a class="border rounded-circle p-2" href="https://www.linkedin.com/in/hngdang/"><i class="bi bi-linkedin" width="24" height="24"></i></a></li>
+                        <li class="me-3"><a class="border rounded-circle p-2" href="https://twitter.com/trn_hngdang" target="_blank"><i class="bi bi-twitter" width="24" height="24"></i></a></li>
+                        <li class="me-3"><a class="border rounded-circle p-2" href="https://www.facebook.com/hngdang.trn/" target="_blank"><i class="bi bi-facebook" width="24" height="24"></i></a></li>
+                        <li class="me-3"><a class="border rounded-circle p-2" href="https://www.instagram.com/hngdang.trn/" target="_blank"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
+                        <li class="me-3"><a class="border rounded-circle p-2" href="https://www.linkedin.com/in/hngdang/" target="_blank"><i class="bi bi-linkedin" width="24" height="24"></i></a></li>
                     </ul>
                     <p class="mb-2"><i class="bi bi-geo-fill text-primary me-3"></i>19, Nguyễn Hữu Thọ, Tân Phong, Quận 7, TP.HCM</p>
                     <p class="mb-2"><i class="bi bi-envelope-fill text-primary me-3"></i>tranhoangdang1402@gmail.com</p>

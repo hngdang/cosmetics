@@ -29,7 +29,6 @@ class AuthController extends Controller
         if(isset($user)){
             if(Hash::check($request->password,$user->password)){
                 if(Auth::attempt(['email' => $request->email, 'password' => $request->password, 'is_active' => 1])){
-                    /* \Cookie::queue('cosmetics', $request->email, 43200); */
                     return redirect()->route('home'); 
                 }
                 else{
@@ -166,7 +165,6 @@ class AuthController extends Controller
 
     public function logout(){
         Auth::logout();
-        /* \Cookie::queue(\Cookie::forget('cosmetics')); */
         return redirect()->back();
     }
 }
